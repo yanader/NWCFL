@@ -1,0 +1,60 @@
+AbbeyHeyFC-Abbey Hey
+HultonUtd-Abbey Hulton United
+AFCBlackpool-AFC Blackpool
+AFCLiverpool-AFC Liverpool
+alsagertown_fc-Alsager Town
+AshtonAthletic-Ashton Athletic
+ashtontownfc-Ashton Town
+AshvilleFC-Ashville
+AthertonLRFC-Atherton LR
+AvroFC-Avro
+BacupBoro-Bacup Borough
+barlickfc-Barnoldswick Town
+barntonfc-Barnton
+broctonfc-Brocton
+BurscoughFC1946-Burscough
+OfficialBuryAFC-Bury AFC
+cammelllairdfc-Cammell Laird 1907
+ChaddertonFC-Chadderton
+CharnockFC-Charnock Richard
+CheadleNomads-Cheadle Heath Nomads
+CheadleTownFC-Cheadle Town
+CMCelticFC-Cleator Moor Celtic
+CongletonFC-Congleton Town
+OfficialDHFC-Daisy Hill
+DarwenFC-Darwen FC
+EccleshallFC-Eccleshall
+EllesRangers_FC-Ellesmere Rangers
+EuxtonVillaFC-Euxton Villa
+FCIsleOfMan-FC Isle of Man
+fcsthelens-FC St Helens
+foley_fc-Foley Meir
+GarstangFC-Garstang
+OfficialHOBAFC-Holker Old Boys
+ilkleytown-Ilkley Town
+IrlamFC-Irlam
+kendaltownfc-Kendal Town
+RemycaUtd-Litherland REMYCA
+LongridgeTownFC-Longridge Town
+lowerbreck-Lower Breck
+MaineRoadFC-Maine Road
+Nelsonfc1-Nelson
+NewMillsFC-New Mills
+NorthwichVicsFC-Northwich Victoria
+Padiham_FC-Padiham
+Pilkingtonfc-Pilkington
+PrestwichHeysFC-Prestwich Heys
+RocesterFC1876-Rocester
+RuncornTown-Runcorn Town
+SandbachUtd-Sandbach United
+SouthLplFC-South Liverpool
+squiresgatefc-Squires Gate
+StaffordTown1st-Stafford Town
+Steetonfc-Steeton
+OfficialSGFC-Stockport Georgians
+StockportTownFC-Stockport Town
+Vauxhallmotorfc-Vauxhall Motors
+WD_CFC-West Didsbury & Chorlton
+WinsfordUnited-Winsford United
+wythenshaweafc-Wythenshawe Amateurs
+WTFC1946-Wythenshawe Town

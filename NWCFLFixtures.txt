@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="//use.typekit.net/kkq1nkp.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="en-gb" />
+  	<meta name="document-type" content="Public" /> 
+  	<meta name="document-rating" content="General" />
+  	<meta name="description" content="Latest fixtures for The North West Counties Football League including Emirates F.A Cup, F.A Vase and county cup competitions" />
+  <meta name="keywords" content="north west counties football league, fixtures, Emirates F.A Cup, F.A Vase, county FA Cup competitions" />   
+  <title>www.nwcfl.com - Forthcoming  Fixtures </title>
+	
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#315089">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    
+    <script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script>googletag.cmd.push(function() {
+	var mapLeader = googletag.sizeMapping().
+		addSize([1280, 800], [[970,90], [728,90]]).
+		addSize([600, 800], [468, 60]).
+		addSize([800, 600], [[728, 90], [468, 60]]).
+		addSize([0, 0], [320, 50]).
+		build();
+	
+	window.LeaderSlot= googletag.defineSlot('/11012045/MC_LB_BOTTOM', [970,90], 'div-gpt-ad-1438517384371-2').
+		defineSizeMapping(mapLeader).
+		addService(googletag.pubads());
+	googletag.enableServices();
+
+});
+</script>
+
+<script>googletag.cmd.push(function() {
+	var skyscraper = googletag.sizeMapping().
+		addSize([1280, 800], [[120,600], [160,600]]).
+		addSize([600, 800], [120, 600]).
+		addSize([800, 600], [120, 600]).
+		build();
+	
+	window.LeaderSlot= googletag.defineSlot('/11012045/MC_SKY_TOP', [160,600], 'div-gpt-ad-1438517384371-0').
+		defineSizeMapping(skyscraper).
+		addService(googletag.pubads());
+	window.LeaderSlot= googletag.defineSlot('/11012045/MC_SKY_BOT', [160,600], 'div-gpt-ad-1438517384371-1').
+		defineSizeMapping(skyscraper).
+		addService(googletag.pubads());
+
+	googletag.enableServices();
+
+});
+</script>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head><!--/head-->
+
+<body class="homepage">
+
+    <header id="header">
+    	  
+                        
+
+        <div class="top-bar hidden-xs
+        
+">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="col-lg-12">
+                  <div class="img-fluid">
+                      <img src="/images/nav/nwcfl-header-2019.2.jpg">
+                  </div>
+				</div>
+			</div>
+		</div>						
+    </div>
+<div class="container text-center">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">            
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body" data-placement="right">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+				<a class="navbar-brand visible-xs" href="index.php"><img src="https://www.nwcfl.com/images/nav/nwcfl-badge-100x100.png" height="70" width="70" alt="NWCFL Logo"/></a>
+                </div>
+				
+                <div class="navbar-offcanvas offcanvas">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="https://www.nwcfl.com/index.php"><i class="fa fa-home fa-2x"></i></a></li>
+                        
+                        <li class="dropdown" >
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="news.php">Latest News</a></li>
+                                <li><a href="emblematically.php">Emblematically Speaking</a></li>
+                   <!--             <li><a href="news-archive.php">Archive News</a></li>
+                                <li><a href="news-search.php">Search for News</a></li> -->
+                            </ul>
+                        </li>	
+                    
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Match Centre <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+								<li><a href="https://www.nwcfl.com/pre-season.php">Pre-season Fixtures</a></li>
+                                <li><a href="https://www.nwcfl.com/fixtures.php">Fixtures</a></li>
+                                <li><a href="https://www.nwcfl.com/changes.php">Fixture Changes</a></li>
+                                <li><a href="https://www.nwcfl.com/results.php">Results</a></li>
+                                <li><a href="https://www.nwcfl.com/results-grid.php">Results Grid</a></li>
+                                <li><a href="https://www.nwcfl.com/attendance-grid.php">Attendance Grid</a></li>
+                                <li><a href="https://www.nwcfl.com/league-tables.php">League Tables</a></li>
+                                <li><a href="https://www.nwcfl.com/player-tables.php">Player Tables</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                        <a href="clubpages.php">Club Pages</a></li>
+                        
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">League Info <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.nwcfl.com/league-contacts.php">League Contacts</a></li>
+								<li><a href="https://www.nwcfl.com/league-rules.php">League Rules</a></li>
+                                <li><a href="https://www.nwcfl.com/league-forms.php">League Forms</a></li>
+                           <!--     <li><a href="https://www.nwcfl.com/promotion-forms.php">Promotion Forms</a></li> -->
+                                <li><a href="https://www.nwcfl.com/league-directives.php">League Directives</a></li> 
+								<li><a href="https://www.nwcfl.com/club-resources.php">Club Resources</a></li>
+                                <li><a href="https://www.nwcfl.com/safeguarding.php">Safeguarding and Welfare</a></li>
+                                <li><a href="https://www.nwcfl.com/league-respect.php">Respect Codes of Conduct</a></li>
+                                <li><a href="https://www.nwcfl.com/league-vacancies.php">League Vacancies</a></li>
+                                <li><a href="https://www.nwcfl.com/league-assets.php">League Assets (Logo)</a></li>
+                                <li><a href="https://www.nwcfl.com/league-advertising.php">Advertising Materials</a></li>
+                                <!-- <li><a href="https://www.nwcfl.com/league-sponsorship.php">Sponsorship</a></li> -->
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown" >
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+								<li><a href="https://www.nwcfl.com/league-honours.php">League Honours</a></li>
+                                <li><a href="https://www.nwcfl.com/league-history.php">League History</a></li>
+                                <li><a href="https://www.nwcfl.com/archive-league-tables.php">League Tables</a></li>
+                                <li><a href="https://www.nwcfl.com/archive-results.php">Archive Results</a></li>
+                                <li><a href="https://www.nwcfl.com/archive-member-records.php">Member Records</a></li>
+                               <li><a href="https://www.nwcfl.com/archive-headtohead.php">Head to Head Records</a></li>
+                               <li><a href="https://www.nwcfl.com/archive-highscores.php">High Scores</a></li>
+                            </ul>
+                        </li>						
+                        <li><a href="https://www.nwcfl.com/links.php">Links</a></li>
+                        <li><a href="https://www.nwcfl.com/contact-us.php">Contact Us</i></a></li>
+						<li><a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+  						<span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span></a>
+						</li>
+                    </ul>
+                   
+                </div>  
+                                                 
+            </div><!--/.container-->
+        </nav><!--/nav-->
+	</div>
+    </header><!--/header-->    
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInDown">
+                <div class="hidden-xs">
+                <h1>Forthcoming  Fixtures </h1>
+                <p><form name="form" id="form">
+  <table class="fixture_dropdown">
+    <tr>
+      <td>
+      Select Fixtures By Month<br>
+        <select class="form-control" name="month" id="month" onChange="MM_jumpMenu('parent',this,1)">
+          <option>Select Month</option>
+          <option value="noformat-fixtures.php?month=7&amp;year=2022">July</option>
+          <option value="noformat-fixtures.php?month=8&amp;year=2022">August</option>
+          <option value="noformat-fixtures.php?month=9&amp;year=2022">September</option>
+          <option value="noformat-fixtures.php?month=10&amp;year=2022">October</option>
+          <option value="noformat-fixtures.php?month=11&amp;year=2022">November</option>
+          <option value="noformat-fixtures.php?month=12&amp;year=2022">December</option>
+          <option value="noformat-fixtures.php?month=1&amp;year=2023">January</option>
+          <option value="noformat-fixtures.php?month=2&amp;year=2023">February</option>
+          <option value="noformat-fixtures.php?month=3&amp;year=2023">March</option>
+          <option value="noformat-fixtures.php?month=4&amp;year=2023">April</option>
+          <option value="noformat-fixtures.php?month=5&amp;year=2023">May</option>
+        </select></td>
+      <td>Select Fixtures by Competition<br>
+        <select class="form-control" name="Competition" id="Competition" onChange="MM_jumpMenu('parent',this,1)">
+          <option>Select Competition</option>
+          <option value="noformat-fixtures.php?comp=5">Premier Division</option>
+          <option value="noformat-fixtures.php?comp=46">First Division North</option>
+          <option value="noformat-fixtures.php?comp=47">First Division South</option>
+          <option value="noformat-fixtures.php?comp=1">Emirates F.A. Challenge Cup</option>
+          <option value="noformat-fixtures.php?comp=2">The Isuzu FA Vase</option>
+          <option value="noformat-fixtures.php?comp=3">The Macron Cup</option>
+          <option value="noformat-fixtures.php?comp=4">The Edward Case Cup</option>
+          <option value="noformat-fixtures.php?comp=43">The Reusch Champions Cup</option>
+          <option value="noformat-fixtures.php?comp=7">Cheshire Senior Cup</option>
+          <option value="noformat-fixtures.php?comp=8">Derbyshire Senior Cup</option>
+          <option value="noformat-fixtures.php?comp=35">Cumberland Senior Cup</option>          
+          <option value="noformat-fixtures.php?comp=9">Lancashire Challenge Trophy</option>
+          <option value="noformat-fixtures.php?comp=10">Liverpool Senior Cup</option>
+          <option value="noformat-fixtures.php?comp=11">Manchester Premier Cup</option>
+          <option value="noformat-fixtures.php?comp=12">Mid Cheshire Senior Cup</option>
+          <option value="noformat-fixtures.php?comp=48">Sheffield &amp; Hallamshire Senior Cup</option>
+          <option value="noformat-fixtures.php?comp=42">Shropshire County Cup</option>
+          <option value="noformat-fixtures.php?comp=14">Staffordshire Senior Cup</option>
+          <option value="noformat-fixtures.php?comp=45">Wirral Senior Cup</option>
+          <option value="noformat-fixtures.php?comp=15">West Riding County Cup</option>
+        </select>
+       </td>
+    </tr>
+  </table>
+</form></p>
+		<b>Friday 24th March 2023<br>
+						 	 First Division North</b><br><table><tr><td>Garstang</td><td> v </td><td>AFC Blackpool</td></tr></table><br><b>Saturday 25th March 2023<br>
+						 	 Premier Division</b><br><table><tr><td>AFC Liverpool</td><td> v </td><td>Burscough</td></tr><tr><td>Ashton Athletic</td><td> v </td><td>Charnock Richard</td></tr><tr><td>Barnoldswick Town</td><td> v </td><td>Longridge Town</td></tr><tr><td>Bury AFC</td><td> v </td><td>Kendal Town</td></tr><tr><td>FC Isle of Man</td><td> v </td><td>West Didsbury &amp; Chorlton</td></tr><tr><td>Litherland REMYCA</td><td> v </td><td>Congleton Town</td></tr><tr><td>Squires Gate</td><td> v </td><td>Prestwich Heys</td></tr><tr><td>Vauxhall Motors</td><td> v </td><td>Irlam</td></tr><tr><td>Winsford United</td><td> v </td><td>Padiham</td></tr><tr><td>Wythenshawe Town</td><td> v </td><td>Lower Breck</td></tr></table><br><b>Saturday 25th March 2023<br>
+						 	 First Division North</b><br><table><tr><td>Ashton Town</td><td> v </td><td>Runcorn Town</td></tr><tr><td>Chadderton</td><td> v </td><td>South Liverpool</td></tr><tr><td>Cleator Moor Celtic</td><td> v </td><td>Pilkington</td></tr><tr><td>Daisy Hill</td><td> v </td><td>Bacup Borough</td></tr><tr><td>Darwen FC</td><td> v </td><td>Atherton LR</td></tr><tr><td>Euxton Villa</td><td> v </td><td>Steeton</td></tr><tr><td>FC St Helens</td><td> v </td><td>Holker Old Boys</td></tr><tr><td>Nelson</td><td> v </td><td>Ilkley Town</td></tr></table><br><b>Saturday 25th March 2023<br>
+						 	 First Division South</b><br><table><tr><td>Alsager Town</td><td> v </td><td>Barnton</td></tr><tr><td>Cammell Laird 1907</td><td> v </td><td>Abbey Hulton United</td></tr><tr><td>Cheadle Town</td><td> v </td><td>New Mills</td></tr><tr><td>Eccleshall</td><td> v </td><td>Stockport Georgians</td></tr><tr><td>Ellesmere Rangers</td><td> v </td><td>Ashville</td></tr><tr><td>Foley Meir</td><td> v </td><td>Sandbach United</td></tr><tr><td>Maine Road</td><td> v </td><td>Brocton</td></tr><tr><td>Stafford Town</td><td> v </td><td>Rocester</td></tr><tr><td>Stockport Town</td><td> v </td><td>Cheadle Heath Nomads</td></tr><tr><td>Wythenshawe Amateurs</td><td> v </td><td>Abbey Hey</td></tr></table><br><b>Monday 27th March 2023<br>
+						 	 First Division North</b><br><table><tr><td>Runcorn Town</td><td> v </td><td>Bacup Borough</td></tr></table><br><b>Monday 27th March 2023<br>
+						 	 First Division South</b><br><table><tr><td>Maine Road</td><td> v </td><td>Cheadle Heath Nomads</td></tr></table><br><b>Tuesday 28th March 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Charnock Richard</td><td> v </td><td>Congleton Town</td></tr><tr><td>Prestwich Heys</td><td> v </td><td>West Didsbury &amp; Chorlton</td></tr><tr><td>Vauxhall Motors</td><td> v </td><td>Bury AFC</td></tr></table><br><b>Tuesday 28th March 2023<br>
+						 	 First Division North</b><br><table><tr><td>Holker Old Boys</td><td> v </td><td>Cleator Moor Celtic</td></tr><tr><td>Ilkley Town</td><td> v </td><td>Chadderton</td></tr><tr><td>Steeton</td><td> v </td><td>Garstang</td></tr></table><br><b>Tuesday 28th March 2023<br>
+						 	 First Division South</b><br><table><tr><td>Abbey Hulton United</td><td> v </td><td>Eccleshall</td></tr><tr><td>Ashville</td><td> v </td><td>Rocester</td></tr><tr><td>Brocton</td><td> v </td><td>Wythenshawe Amateurs</td></tr><tr><td>New Mills</td><td> v </td><td>Ellesmere Rangers</td></tr></table><br><b>Wednesday 29th March 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Northwich Victoria</td><td> v </td><td>Padiham</td></tr></table><br><b>Wednesday 29th March 2023<br>
+						 	 First Division North</b><br><table><tr><td>Bacup Borough</td><td> v </td><td>Pilkington</td></tr><tr><td>South Liverpool</td><td> v </td><td>FC St Helens</td></tr></table><br><b>Wednesday 29th March 2023<br>
+						 	 First Division South</b><br><table><tr><td>Barnton</td><td> v </td><td>Cheadle Town</td></tr></table><br><b>Wednesday 29th March 2023<br>
+						 	 Lancashire Challenge Trophy Semi Finals</b><br><table><tr><td>Ashton Athletic</td><td> v </td><td>Southport</td></tr></table><br><b>Thursday 30th March 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Bury AFC</td><td> v </td><td>AFC Liverpool</td></tr></table><br><b>Thursday 30th March 2023<br>
+						 	 West Riding County Cup Semi Finals</b><br><table><tr><td>Liversedge</td><td> v </td><td>Barnoldswick Town</td></tr></table><br><b>Friday 31st March 2023<br>
+						 	 First Division North</b><br><table><tr><td>Euxton Villa</td><td> v </td><td>South Liverpool</td></tr></table><br><b>Saturday 1st April 2023<br>
+						 	 The Isuzu FA Vase Semi Finals</b><br><table><tr><td>Congleton Town</td><td> v </td><td>Newport Pagnell Town</td></tr></table><br><b>Saturday 1st April 2023<br>
+						 	 The Edward Case Cup Semi Finals</b><br><table><tr><td>Bacup Borough</td><td> v </td><td>Abbey Hulton United</td></tr></table><br><b>Saturday 1st April 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Ashton Athletic</td><td> v </td><td>Burscough</td></tr><tr><td>Avro</td><td> v </td><td>Winsford United</td></tr><tr><td>Charnock Richard</td><td> v </td><td>Bury AFC</td></tr><tr><td>Irlam</td><td> v </td><td>Litherland REMYCA</td></tr><tr><td>Kendal Town</td><td> v </td><td>West Didsbury &amp; Chorlton</td></tr><tr><td>Longridge Town</td><td> v </td><td>Northwich Victoria</td></tr><tr><td>Lower Breck</td><td> v </td><td>FC Isle of Man</td></tr><tr><td>Padiham</td><td> v </td><td>AFC Liverpool</td></tr><tr><td>Prestwich Heys</td><td> v </td><td>Barnoldswick Town</td></tr><tr><td>Squires Gate</td><td> v </td><td>Vauxhall Motors</td></tr></table><br><b>Saturday 1st April 2023<br>
+						 	 First Division North</b><br><table><tr><td>Atherton LR</td><td> v </td><td>AFC Blackpool</td></tr><tr><td>Chadderton</td><td> v </td><td>Nelson</td></tr><tr><td>Cleator Moor Celtic</td><td> v </td><td>Ashton Town</td></tr><tr><td>Darwen FC</td><td> v </td><td>Daisy Hill</td></tr><tr><td>Ilkley Town</td><td> v </td><td>FC St Helens</td></tr><tr><td>Pilkington</td><td> v </td><td>Garstang</td></tr><tr><td>Steeton</td><td> v </td><td>Holker Old Boys</td></tr></table><br><b>Saturday 1st April 2023<br>
+						 	 First Division South</b><br><table><tr><td>Ashville</td><td> v </td><td>Alsager Town</td></tr><tr><td>Barnton</td><td> v </td><td>Ellesmere Rangers</td></tr><tr><td>Foley Meir</td><td> v </td><td>Cheadle Heath Nomads</td></tr><tr><td>New Mills</td><td> v </td><td>Cammell Laird 1907</td></tr><tr><td>Rocester</td><td> v </td><td>Brocton</td></tr><tr><td>Sandbach United</td><td> v </td><td>Stockport Town</td></tr><tr><td>Stafford Town</td><td> v </td><td>Maine Road</td></tr><tr><td>Stockport Georgians</td><td> v </td><td>Abbey Hey</td></tr><tr><td>Wythenshawe Amateurs</td><td> v </td><td>Eccleshall</td></tr></table><br><b>Sunday 2nd April 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Longridge Town</td><td> v </td><td>FC Isle of Man</td></tr></table><br><b>Tuesday 4th April 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Barnoldswick Town</td><td> v </td><td>Congleton Town</td></tr><tr><td>Bury AFC</td><td> v </td><td>Vauxhall Motors</td></tr><tr><td>Charnock Richard</td><td> v </td><td>Winsford United</td></tr><tr><td>Padiham</td><td> v </td><td>Kendal Town</td></tr><tr><td>Prestwich Heys</td><td> v </td><td>Wythenshawe Town</td></tr><tr><td>West Didsbury &amp; Chorlton</td><td> v </td><td>Avro</td></tr></table><br><b>Tuesday 4th April 2023<br>
+						 	 First Division North</b><br><table><tr><td>Cleator Moor Celtic</td><td> v </td><td>Nelson</td></tr><tr><td>Holker Old Boys</td><td> v </td><td>Chadderton</td></tr><tr><td>Runcorn Town</td><td> v </td><td>South Liverpool</td></tr></table><br><b>Tuesday 4th April 2023<br>
+						 	 First Division South</b><br><table><tr><td>Ashville</td><td> v </td><td>Foley Meir</td></tr><tr><td>Cheadle Town</td><td> v </td><td>Abbey Hulton United</td></tr></table><br><b>Wednesday 5th April 2023<br>
+						 	 First Division North</b><br><table><tr><td>Bacup Borough</td><td> v </td><td>Ashton Town</td></tr></table><br><b>Friday 7th April 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Bury AFC</td><td> v </td><td>Longridge Town</td></tr></table><br><b>Saturday 8th April 2023<br>
+						 	 The Macron Cup Semi Finals</b><br><table><tr><td>Bacup Borough</td><td> v </td><td>FC St Helens</td></tr><tr><td>Kendal Town</td><td> v </td><td>Congleton Town</td></tr></table><br><b>Saturday 8th April 2023<br>
+						 	 The Edward Case Cup Semi Finals</b><br><table><tr><td>Chadderton</td><td> v </td><td>Ellesmere Rangers</td></tr></table><br><b>Saturday 8th April 2023<br>
+						 	 Premier Division</b><br><table><tr><td>FC Isle of Man</td><td> v </td><td>Avro</td></tr></table><br><b>Saturday 8th April 2023<br>
+						 	 First Division North</b><br><table><tr><td>Nelson</td><td> v </td><td>Ashton Town</td></tr><tr><td>South Liverpool</td><td> v </td><td>Cleator Moor Celtic</td></tr></table><br><b>Saturday 8th April 2023<br>
+						 	 First Division South</b><br><table><tr><td>Ashville</td><td> v </td><td>Cammell Laird 1907</td></tr></table><br><b>Monday 10th April 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Ashton Athletic</td><td> v </td><td>Irlam</td></tr><tr><td>Barnoldswick Town</td><td> v </td><td>Padiham</td></tr><tr><td>Burscough</td><td> v </td><td>Squires Gate</td></tr><tr><td>Charnock Richard</td><td> v </td><td>West Didsbury &amp; Chorlton</td></tr><tr><td>Congleton Town</td><td> v </td><td>Northwich Victoria</td></tr><tr><td>Longridge Town</td><td> v </td><td>Kendal Town</td></tr><tr><td>Lower Breck</td><td> v </td><td>Prestwich Heys</td></tr><tr><td>Vauxhall Motors</td><td> v </td><td>AFC Liverpool</td></tr><tr><td>Winsford United</td><td> v </td><td>Litherland REMYCA</td></tr><tr><td>Wythenshawe Town</td><td> v </td><td>Bury AFC</td></tr></table><br><b>Monday 10th April 2023<br>
+						 	 First Division North</b><br><table><tr><td>AFC Blackpool</td><td> v </td><td>Euxton Villa</td></tr><tr><td>Bacup Borough</td><td> v </td><td>Chadderton</td></tr><tr><td>Daisy Hill</td><td> v </td><td>Atherton LR</td></tr><tr><td>FC St Helens</td><td> v </td><td>Pilkington</td></tr><tr><td>Garstang</td><td> v </td><td>Ashton Town</td></tr><tr><td>Holker Old Boys</td><td> v </td><td>South Liverpool</td></tr><tr><td>Nelson</td><td> v </td><td>Darwen FC</td></tr><tr><td>Runcorn Town</td><td> v </td><td>Cleator Moor Celtic</td></tr><tr><td>Steeton</td><td> v </td><td>Ilkley Town</td></tr></table><br><b>Monday 10th April 2023<br>
+						 	 First Division South</b><br><table><tr><td>Abbey Hey</td><td> v </td><td>New Mills</td></tr><tr><td>Abbey Hulton United</td><td> v </td><td>Rocester</td></tr><tr><td>Alsager Town</td><td> v </td><td>Foley Meir</td></tr><tr><td>Barnton</td><td> v </td><td>Sandbach United</td></tr><tr><td>Brocton</td><td> v </td><td>Stafford Town</td></tr><tr><td>Cheadle Heath Nomads</td><td> v </td><td>Cheadle Town</td></tr><tr><td>Ellesmere Rangers</td><td> v </td><td>Eccleshall</td></tr><tr><td>Maine Road</td><td> v </td><td>Wythenshawe Amateurs</td></tr><tr><td>Stockport Town</td><td> v </td><td>Stockport Georgians</td></tr></table><br><b>Wednesday 12th April 2023<br>
+						 	 First Division North</b><br><table><tr><td>Bacup Borough</td><td> v </td><td>Garstang</td></tr></table><br><b>Thursday 13th April 2023<br>
+						 	 Premier Division</b><br><table><tr><td>Bury AFC</td><td> v </td><td>Burscough</td></tr><tr><td>Lower Breck</td><td> v </td><td>West Didsbury &amp; Chorlton</td></tr>	</tbody></table>        <p>&nbsp;</p>
+                </div>
+
+            </div><!--/.col-lg-8-->
+
+        </div><!--/.row-->
+    </div><!--/.container-->
+
+        <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="hidden-xs">            
+            	<div>&nbsp;</div>               
+<div class="col-md-3 col-sm-6 hidden-sm">
+                    <div class="widget">
+						<h3><img src="images/sections/nwcfl-Premier-Division-Lock-Up-202122.png" width="150" height="57" alt=""/></h3>
+                        <ul>
+
+<li><a href="/clubpage.php?id=2">AFC Liverpool </a></li><li><a href="/clubpage.php?id=4">Ashton Athletic </a></li><li><a href="/clubpage.php?id=734">Avro </a></li><li><a href="/clubpage.php?id=7">Barnoldswick Town </a></li><li><a href="/clubpage.php?id=76">Burscough </a></li><li><a href="/clubpage.php?id=885">Bury AFC </a></li><li><a href="/clubpage.php?id=151">Charnock Richard </a></li><li><a href="/clubpage.php?id=10">Congleton Town </a></li><li><a href="/clubpage.php?id=884">FC Isle of Man </a></li><li><a href="/clubpage.php?id=33">Irlam </a></li><li><a href="/clubpage.php?id=113">Kendal Town </a></li><li><a href="/clubpage.php?id=746">Litherland REMYCA </a></li><li><a href="/clubpage.php?id=832">Longridge Town </a></li><li><a href="/clubpage.php?id=833">Lower Breck </a></li><li><a href="/clubpage.php?id=131">Northwich Victoria </a></li><li><a href="/clubpage.php?id=14">Padiham </a></li><li><a href="/clubpage.php?id=254">Prestwich Heys </a></li><li><a href="/clubpage.php?id=19">Squires Gate </a></li><li><a href="/clubpage.php?id=68">Vauxhall Motors </a></li><li><a href="/clubpage.php?id=681">West Didsbury &amp; Chorlton </a></li><li><a href="/clubpage.php?id=22">Winsford United </a></li><li><a href="/clubpage.php?id=830">Wythenshawe Town </a></li>
+                        </ul>
+						<br>
+						
+                        <h3>Match Centre</h3>
+                        <ul>
+                            <li><a href="/fixtures.php">Fixtures</a></li>
+                            <li><a href="/noformat-fixtures.php">No Format Fixtures</a></li>
+                            <li><a href="/results.php">Results</a></li>
+                            <li><a href="/results-grid.php">Results Grid</a></li>
+                            <li><a href="/attendance-grid.php">Attendance Grid</a></li>
+                            <li><a href="/league-tables.php">League Tables</a></li>
+                            <li><a href="/player-tables.php">Player Tables</a></li>
+                            <li><a href="/pre-season.php">Pre-Season</a></li>
+                        </ul>
+                    
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 hidden-sm">
+                    <div class="widget">
+                        <h3><img src="images/sections/nwcfl-First-Division-North-Lock-Up-202122.png" width="150" height="57" alt=""/></h3>
+                        <ul>
+<li><a href="/clubpage.php?id=1">AFC Blackpool </a></li><li><a href="/clubpage.php?id=25">Ashton Town </a></li><li><a href="/clubpage.php?id=5">Atherton LR </a></li><li><a href="/clubpage.php?id=6">Bacup Borough </a></li><li><a href="/clubpage.php?id=27">Chadderton </a></li><li><a href="/clubpage.php?id=525">Cleator Moor Celtic </a></li><li><a href="/clubpage.php?id=29">Daisy Hill </a></li><li><a href="/clubpage.php?id=24">Darwen FC </a></li><li><a href="/clubpage.php?id=897">Euxton Villa </a></li><li><a href="/clubpage.php?id=896">FC St Helens </a></li><li><a href="/clubpage.php?id=831">Garstang </a></li><li><a href="/clubpage.php?id=32">Holker Old Boys </a></li><li><a href="/clubpage.php?id=889">Ilkley Town </a></li><li><a href="/clubpage.php?id=35">Nelson </a></li><li><a href="/clubpage.php?id=852">Pilkington </a></li><li><a href="/clubpage.php?id=17">Runcorn Town </a></li><li><a href="/clubpage.php?id=209">South Liverpool </a></li><li><a href="/clubpage.php?id=712">Steeton </a></li>
+                        </ul>
+				
+						
+                        <br>
+                        <h3>League Information</h3>
+                        <ul>
+                            <li><a href="/league-contacts.php">League Contacts</a></li>
+							<li><a href="/league-rules.php">League Rules</a></li>
+                            <li><a href="/league-forms.php">League Forms</a></li>
+                            <li><a href="/league-directives.php">League Directives</a></li>
+                            <li><a href="/league-respect.php">FA Respect Campaign</a></li>
+							<li><a href="/vacancies.php">League Role Vacancies</a></li>
+                            <li><a href="/league-advertising.php">League Programme Adverts</a></li>
+                            <li><a href="/league-assets.php">League Logos</a></li>
+
+                        </ul>
+
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 hidden-sm">
+                    <div class="widget">
+                        <h3><img src="images/sections/nwcfl-First-Division-South-Lock-Up-202122.png" width="150" height="57" alt=""/></h3>
+                        <ul>
+<li><a href="/clubpage.php?id=23">Abbey Hey </a></li><li><a href="/clubpage.php?id=691">Abbey Hulton United </a></li><li><a href="/clubpage.php?id=3">Alsager Town </a></li><li><a href="/clubpage.php?id=102">Ashville </a></li><li><a href="/clubpage.php?id=266">Barnton </a></li><li><a href="/clubpage.php?id=205">Brocton </a></li><li><a href="/clubpage.php?id=748">Cammell Laird 1907 </a></li><li><a href="/clubpage.php?id=713">Cheadle Heath Nomads </a></li><li><a href="/clubpage.php?id=28">Cheadle Town </a></li><li><a href="/clubpage.php?id=30">Eccleshall </a></li><li><a href="/clubpage.php?id=118">Ellesmere Rangers </a></li><li><a href="/clubpage.php?id=898">Foley Meir </a></li><li><a href="/clubpage.php?id=13">Maine Road </a></li><li><a href="/clubpage.php?id=91">New Mills </a></li><li><a href="/clubpage.php?id=259">Rocester </a></li><li><a href="/clubpage.php?id=803">Sandbach United </a></li><li><a href="/clubpage.php?id=182">Stafford Town </a></li><li><a href="/clubpage.php?id=240">Stockport Georgians </a></li><li><a href="/clubpage.php?id=789">Stockport Town </a></li><li><a href="/clubpage.php?id=497">Wythenshawe Amateurs </a></li>
+                        </ul>
+						
+						<br>
+                        <h3>No Format</h3>
+                        <ul>
+                            <li><a href="/noformat-fixtures.php">No Format Fixtures</a></li>
+                            <li><a href="/noformat-results.php">No Format Results</a></li>
+                            <li><a href="/noformat-tables.php">No Format Tables</a></li>
+                        </ul>
+
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 hidden-sm">
+                    <div class="widget">
+						<h3>News</h3>
+                        <ul>
+                            <li><a href="/news.php">News</a></li>
+                       <!--     <li><a href="../news-archive.php">News Archive</a></li>
+                            <li><a href="../news-search.php">News Search</a></li> -->
+                        </ul>
+						<br>
+                        <h3>League Archives</h3>
+                        <ul>
+                            <li><a href="/league-honours.php">League Honours</a></li>
+                            <li><a href="/league-history.php">League History</a></li>
+							<li><a href="/archive-league-tables.php">Archive League Tables</li>
+                            <li><a href="/archive-results.php">Archive Results</li>
+                            <li><a href="/archive-member-records.php">Full Member Records</li>
+                            <li><a href="/archive-headtohead.php">Head to Head Results</li>
+                            <li><a href="/archive-highscores.php">League High Scores List</li>
+                        </ul>
+                        <br>
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><a href="http://twitter.com/nwcfl" title="NWCFL Twitter Page" target="_blank">Twitter</a></li>
+                            <li><a href="http://www.facebook.com/nwcfl" title="NWCFL Facebook Page" target="_blank">Facebook</a></li>
+							<li><a href="http://www.youtube.com/channel/UCdZEPb51n9ccEPrUUKQOfwQ" title="NWCFL YouTube Channel" target="_blank">YouTube</a></li>
+							<li><a href="https://www.instagram.com/northwestcountiesfl/" title="NWCFL Instagram Page" target="_blank">Instagram</a></li>
+                            <li><a href="http://www.flickr.com/groups/nwcfl/" title="NWCFL Flickr Group" target="_blank">Flickr</a></li>
+                        </ul>
+                        <br>
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="/links.php">Links</a></li>
+                            <li><a href="/clubadmin/index.php">Club Admin</a></li>							
+                        </ul>
+                        <br>
+                        <h3>Other</h3>
+                        <ul>
+                            <li><a href="/privacy-policy.php">Privacy Policy</a></li>
+                            <li><a href="/cookies.php">How We Use Cookies</a></li>
+                            <li><a href="/terms-conditions.php">Terms and Conditions</a></li>
+                            <li><a href="/contact-us.php">Contact Us</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+                <div class="center col-md-3 visible-sm">
+                    <div class="widget">
+                        <h3>Match Centre</h3>
+                        <ul>
+                            <li><a href="/fixtures.php">Fixtures</a></li>
+                            <li><a href="/results.php">Results</a></li>
+                            <li><a href="/results-grid.php">Results Grid</a></li>
+                            <li><a href="/attendance-grid.php">Attendance Grid</a></li>
+                            <li><a href="/league-tables.php">League Tables</a></li>
+                            <li><a href="/player-tables.php">Player Tables</a></li>
+                            <li><a href="/pre-season.php">Pre-Season</a></li>
+                        </ul>
+						<br>
+						<h3>News</h3>
+                        <ul>
+                            <li><a href="/news.php">News</a></li>
+                        </ul>
+						<br>
+						<h3>Clubs</h3>
+                        <ul>
+                            <li><a href="clubpages.php">Club Pages</a></li>
+                        </ul>
+                        <br>
+                       <h3>League Information</h3>
+                        <ul>
+                            <li><a href="/league-contacts.php">League Contacts</a></li>
+							<li><a href="/league-rules.php">League Rules</a></li>
+                            <li><a href="/league-forms.php">League Forms</a></li>
+                            <li><a href="/league-directives.php">League Directives</a></li>
+							<li><a href="/league-respect.php">FA Respect Campaign</a></li>
+							<li><a href="/vacancies.php">League Role Vacancies</a></li>
+                            <li><a href="/league-advertising.php">League Adverts &amp; Logo</a></li>
+                            <li><a href="/sponsorship.php">Sponsorship Opportunities</a></li>
+                        </ul>
+					    <br>
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="/links.php">Links</a></li>
+                            <li><a href="/clubadmin/index.php">Club Admin</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+                </div>
+                <div class="visible-xs" align="center">            
+            	                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+						<h3><a href="/fixtures.php">Fixtures</a></h3>
+						<h3><a href="/results.php">Results</a></h3>
+                        <h3><a href="/league-tables.php">League Tables</a></h3>
+                        <h3><a href="/news.php">News</a></h3>
+                        <h3><a href="/league-contacts.php">League Contacts</a></h3>
+                        <h3><a href="/clubpages.php">Club Pages</a></h3>
+                        <!--<h3>League Archives 1982-2015</h3>-->
+                        <!--<h3><a href="../sponsorship.php">Sponsorship Opportunities</a></h3>-->
+                        <h3><a href="/links.php">Links</a></h3>
+                        <h3><a href="/clubadmin/index.php">Club Admin</a></h3>
+                    </div>    
+                </div><!--/.col-md-3-->                </div>
+            </div>
+        </div>
+    </section><!--/#bottom-->
+        <footer id="footer" class="
+        
+">
+        <div class="container">
+            <div class="row center">
+				 <div class="col-lg-12"><img src="images/sections/nwcfl-badge-design-202122-white.png" height="100" alt="NWCFL Logo White"/></div>
+		
+			 <div class="col-lg-12">
+                    <ul class="centre visible-lg">
+                        <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                        <li><a href="cookies.php">How We Use Cookies</a></li>
+                        <li><a href="terms-conditions.php">Terms and Conditions</a></li>
+                        <li><a href="contact-us.php">Contact Us</a></li>
+                    </ul>
+                    <ul class="centre visible-md">
+                        <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                        <li><a href="cookies.php">How We Use Cookies</a></li>
+                        <li><a href="terms-conditions.php">T &amp; C</a></li>
+                        <li><a href="contact-us.php">Contact</a></li>
+                    </ul>
+                    <ul class="centre visible-sm visible-xs">
+                        <li><a href="privacy-policy.php">Privacy</a></li>
+                        <li><a href="cookies.php">Cookies</a></li>
+                        <li><a href="terms-conditions.php">T &amp; C</a></li>
+                        <li><a href="contact-us.php">Contact</a></li>
+                    </ul>
+                </div>
+				<div>&nbsp;</div>
+                <div class="col-lg-12 visible-lg visible-md">&copy; Copyright 2023 - The North West Counties Football League Limited<br>Registered in England & Wales (Company number 11407266)<br>Registered Address: 24 The Pastures, Crossens, Southport, PR9 8RH</div>
+                <div class="col-sm-6 visible-sm">&copy; Copyright 2023 - The North West Counties Football League Limited</div>
+                <div class="col-sm-6 visible-xs">&copy; Copyright 2023<br>The North West Counties Football League Limited</div>
+                
+               
+            </div>
+        </div>
+    </footer><!--/#footer-->
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-503e582308d46172" async="async"></script>
+  
+<!--Google Analytics Tracking Code-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42467745-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!--End Google Analytics Tracking Code-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>
