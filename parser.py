@@ -1,4 +1,5 @@
-import bs4, requests
+import bs4
+import requests
 
 
 def create_fixture_dict(date_string: str):
