@@ -1,20 +1,21 @@
 import snscrape.modules.twitter as sntwitter
-import re, os
+import re
+
 
 def tweet_reader(playing_today: list):
-    teamFile = open('T:\\Coding\\NWCFL\\teamsDictionary.txt')
-    teams = teamFile.read()
-    teamFile.close()
-    teamList = teams.split('\n')
-    teamDictionary = {}
-    for team in teamList:
-        teamItems = team.split('-')
-        if teamItems[1] in playing_today:
-            teamDictionary[teamItems[0]] = teamItems[1]
+    team_file = open('T:\\Coding\\Projects\\Python\\NWCFL\\teamsDictionary.txt')
+    teams = team_file.read()
+    team_file.close()
+    team_list = teams.split('\n')
+    team_dictionary = {}
+    for team in team_list:
+        team_items = team.split('-')
+        if team_items[1] in playing_today:
+            team_dictionary[team_items[0]] = team_items[1]
 
 # Created a list to append all tweet attributes(data)
     attributes_container = []
-    scoreRegex = re.compile(r'''
+    score_regex = re.compile(r'''
             #[^:\n]
             \d{1,2}
             -
@@ -23,12 +24,12 @@ def tweet_reader(playing_today: list):
             ''', re.VERBOSE)
 
 # Using TwitterSearchScraper to scrape data and append tweets to list
-    for team in teamDictionary.keys():
+    for team in team_dictionary.keys():
         for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+team).get_items()):
             if i > 5:
                 break
             text = tweet.rawContent
-            extract = scoreRegex.findall(text)
+            extract = score_regex.findall(text)
             if len(extract) > 0:
                 extract_string = extract[0]
                 extract_string = extract_string.replace('\n', '')

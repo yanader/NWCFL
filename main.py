@@ -1,20 +1,17 @@
-import dateFormatting as dF
+import date_formatting as df
 import parser as p
-import twitterReader as tr
-# 1) load fixtures for the day
-# 2) produce list of teams (from txt file) who have mathces today
-# 3) load tweets for those teams only
+import twitter_reader as tr
+
 
 # Monday 27th March 2023
-matchDate = dF.custom_date()
-
+matchDate = df.custom_date()
 print(matchDate + '\n')
+
 fixture_dict = p.create_fixture_dict(matchDate)
 result_dict = p.create_results_dict(matchDate)
 
 play_today_list = p.create_team_list(fixture_dict, result_dict)
-#print(play_today_list)
-#print(len(play_today_list))
+
 
 if len(play_today_list) == 0:
     print("There are no matches today.")
