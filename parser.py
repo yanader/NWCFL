@@ -4,6 +4,7 @@ import re
 
 
 def create_dictionary(date_string: str, url: str):
+    print('this ran again')
     if url == 'fixtures':
         res_games = requests.get('https://www.nwcfl.com/noformat-fixtures.php')
     elif url == 'results':
@@ -50,6 +51,7 @@ def clean_games(game_list:list):
             s = s.replace(item, '')
         s = s.replace('</tr>', '\n')
         s = s.replace('amp;', '')
+        s = s.replace('-', ' - ')
         s = s.replace(' v ', ' - ')
         s = s.strip()
         s = s.split('\n')
@@ -77,13 +79,13 @@ def playing_today(game_day_dict: dict):
             if 'P-P' in value:
                 continue
             if '-' in value:
-                teams = value.split(' - ')
+                teams = value.strip().split('-')
             else:
                 teams = value.split(' v ')
             if teams[0] not in playing_today:
-                playing_today.append(teams[0])
+                playing_today.append(teams[0].strip())
             if teams[1] not in playing_today:
-                playing_today.append(teams[1])
+                playing_today.append(teams[1].strip())
     return playing_today
 
 

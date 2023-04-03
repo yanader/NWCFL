@@ -4,15 +4,15 @@ def dictionary_processor(gameday:dict):
     for k, v in gameday.items():
         for match in v:
             teams = match.split(' - ')
-            daily_fixtures_list.append([k, teams[0], teams[1], []])
+            daily_fixtures_list.append([k, teams[0].strip(), teams[1].strip(), []])
     return daily_fixtures_list
 
 def formatted_list(gameday: dict):
     formatted_return_list = []
     for k, v in gameday.items():
         for match in v:
-            teams = match.split(' - ')
-            formatted_return_list.append([teams[0], ' - ', teams[1]])
+            teams = match.strip().split('-')
+            formatted_return_list.append([teams[0].strip(), ' - ', teams[1].strip()])
     return formatted_return_list
 
 

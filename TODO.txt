@@ -12,3 +12,39 @@ find somewhere to host this so that it can be live
 others?
 do i need to look at how to constantly monitor tweet accounts? twitterReader probably needs a refactor so that it's
 not building the list/dictionary in the same function that reads tweets
+
+probably want to use regex to clean up the inputs from the fixtures and reuslts pages
+
+
+look at the following code as a way of running perpetually:
+
+
+
+import snscrape.modules.twitter as sntwitter
+import time
+
+# Set the keyword to search for
+keyword = "python"
+
+# Keep track of the tweets we've seen so far
+seen_tweets = set()
+
+while True:
+    # Perform a Twitter search for the keyword
+    tweets = sntwitter.TwitterSearchScraper(f"{keyword} since:7 days ago").get_items()
+
+    # Find any new tweets and print them to the console
+    new_tweets = []
+    for tweet in tweets:
+        if tweet.id not in seen_tweets:
+            new_tweets.append(tweet)
+            seen_tweets.add(tweet.id)
+
+    # Print any new tweets to the console
+    if new_tweets:
+        print("New tweets found:")
+        for tweet in new_tweets:
+            print(tweet.content)
+
+    # Wait for a few seconds before checking again
+    time.sleep(5)
