@@ -1,0 +1,14 @@
+Add code to make this run continually. - Potentially just with a 'while True' block but look at the discord bot code
+let the tweet reader add the scores it finds into the 'fixture_list'
+    the idea is that this will collect all the reported scores for each fixture
+    and those can be processed to see which is the most appropriate to publish
+add in functionality to reformat a list in the format [[Home, score, away],[Home, score, away]] which
+    will be used in the flask functionality
+add in the flask functionality to push the above to index.html
+find somewhere to host this so that it can be live
+
+
+
+others?
+do i need to look at how to constantly monitor tweet accounts? twitterReader probably needs a refactor so that it's
+not building the list/dictionary in the same function that reads tweets

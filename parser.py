@@ -86,3 +86,5 @@ def playing_today(game_day_dict: dict):
                 playing_today.append(teams[1])
     return playing_today
 
+
+
