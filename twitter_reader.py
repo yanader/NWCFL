@@ -26,7 +26,7 @@ def tweet_reader(playing_today: list):
 # Using TwitterSearchScraper to scrape data and append tweets to list
     for team in team_dictionary.keys():
         for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+team).get_items()):
-            if i > 5:
+            if i > 1:
                 break
             text = tweet.rawContent
             extract = score_regex.findall(text)

@@ -7,7 +7,7 @@ def suffix(d):
 
 
 def custom_date():
-    day_offset = 2   # I can use this to test for a different date
+    day_offset = 1   # I can use this to test for a different date
     time_delta = timedelta(days=day_offset)
     today = dt.now()
     return_day = today + time_delta

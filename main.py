@@ -7,13 +7,18 @@ import twitter_reader as tr
 matchDate = df.custom_date()
 print(matchDate + '\n')
 
-fixture_dict = p.create_fixture_dict(matchDate)
-result_dict = p.create_results_dict(matchDate)
+gameday_dict = p.create_dictionary(matchDate, "fixtures")
+gameday_dict.update(p.create_dictionary(matchDate, "results"))
 
-play_today_list = p.create_team_list(fixture_dict, result_dict)
+print(gameday_dict)
 
+today_team_list = p.playing_today(gameday_dict)
 
-if len(play_today_list) == 0:
+for team in today_team_list:
+    print(team)
+print()
+
+if len(today_team_list) == 0:
     print("There are no matches today.")
 else:
-    tr.tweet_reader(play_today_list)
+    tr.tweet_reader(today_team_list)
