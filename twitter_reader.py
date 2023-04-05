@@ -1,20 +1,15 @@
 import snscrape.modules.twitter as sntwitter
 import re
+import datetime
+import time
 
 
-def tweet_reader(playing_today: list):
-    team_file = open('T:\\Coding\\Projects\\Python\\NWCFL\\teamsDictionary.txt')
-    teams = team_file.read()
-    team_file.close()
-    team_list = teams.split('\n')
-    team_dictionary = {}
-    for team in team_list:
-        team_items = team.split('-')
-        if team_items[1] in playing_today:
-            team_dictionary[team_items[0]] = team_items[1]
+def tweet_reader(daily_dictionary: dict, reported_scores: list) -> None:
+    start_time = time.time()
 
-# Created a list to append all tweet attributes(data)
-    attributes_container = []
+    tweet_container = []
+    read_tweets = []
+
     score_regex = re.compile(r'''
             #[^:\n]
             \d{1,2}
@@ -23,25 +18,23 @@ def tweet_reader(playing_today: list):
             #[^:!.]
             ''', re.VERBOSE)
 
-# Using TwitterSearchScraper to scrape data and append tweets to list
-    for team in team_dictionary.keys():
-        for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+team).get_items()):
-            if i > 2:
+    for team_name, twitter_handle in daily_dictionary.items():
+        print(team_name + ' ' + str(time.time() - start_time))
+        for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+twitter_handle).get_items()):
+            if tweet.date.date() != datetime.date.today(): # i > 20: ##leaving this code here but i'm going to try this just with date
                 break
+
             text = tweet.rawContent
             extract = score_regex.findall(text)
             if len(extract) > 0:
                 extract_string = extract[0]
                 extract_string = extract_string.replace('\n', '')
                 extract_string = extract_string.replace(' ', '')
-                attributes_container.append([tweet.user.username, extract_string])
+                if tweet.id not in read_tweets:
+                    tweet_container.append([team_name, tweet.user.username, extract_string, tweet.id, tweet.date.date()])
+                    read_tweets.append(tweet.id)
 
-    for tweet in attributes_container:
-        print(tweet[0] + ' ' + tweet[1])
-
-    if len(attributes_container) > 0:
-        return str(tweet[0] + ' ' + tweet[1])
-
-
-
+    for individual_tweet in tweet_container:
+        reported_scores.append([individual_tweet[0], individual_tweet[2]])
+        print(individual_tweet[0] + ' - ' + individual_tweet[1] + ' - ' + individual_tweet[2] + ' - ' + str(individual_tweet[4]))
 

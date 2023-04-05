@@ -7,6 +7,9 @@ add in functionality to reformat a list in the format [[Home, score, away],[Home
 add in the flask functionality to push the above to index.html
 find somewhere to host this so that it can be live
 
+tweet_reader() is now, theoretically, adding any score update to the appropriate list of scores (for the right game) in 'fixture_list'
+this means that i can access that in main and/or pass it along to a new function that will calculate which is the most accurate score
+AKA the one that should be added into the 'formatted_list' (then views can reference formatted list that will only contain 1 score.
 
 
 others?
