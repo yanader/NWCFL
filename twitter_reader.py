@@ -20,7 +20,10 @@ def tweet_reader(daily_dictionary: dict, reported_scores: list) -> None:
 
     for team_name, twitter_handle in daily_dictionary.items():
         print(team_name + ' ' + str(time.time() - start_time))
-        for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+twitter_handle).get_items()):
+        #i've tried this next line as a way of just reading the top result. i need to test this while there are matches on
+        # this may have sorted out the speed issue though.
+        for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+twitter_handle, mode=sntwitter.TwitterSearchScraperMode.TOP).get_items()):
+        ##for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+twitter_handle).get_items()):
             if tweet.date.date() != datetime.date.today(): # i > 20: ##leaving this code here but i'm going to try this just with date
                 break
 

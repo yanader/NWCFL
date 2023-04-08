@@ -28,6 +28,9 @@ reported_scores = []
 
 tr.tweet_reader(daily_twitter_dictionary, reported_scores)
 
+#### this is where i'm leaving a note. it's possible that "top=1" is a named argument we can send to
+### enumerate(sntwitter.TwitterSearchScraper('from:'+twitter_handle).get_items()):
+###to only get the first tweet. it may speed this up. will test.
 
 
 if __name__ == "__main__":
