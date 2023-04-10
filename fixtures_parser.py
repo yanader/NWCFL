@@ -33,6 +33,7 @@ class FixturesParser:
         # i am going to use the dictionary to create Match objects
         # do some checking to see which attributes i want to be instance attributes.
         #   some of these lists can be in the constructor so that i can access them in other ways?
+        # NOTE - currently the postponed list is a list of games and the playing list is a list of teams
 
     def create_playing_list(self, postponed_list: list):
         playing = []
