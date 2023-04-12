@@ -3,124 +3,153 @@ import requests
 import re
 
 
-def create_dictionary(date_string: str, url: str):
-    if url == 'fixtures':
-        res_games = requests.get('https://www.nwcfl.com/noformat-fixtures.php')
-    elif url == 'results':
-        res_games = requests.get('https://www.nwcfl.com/noformat-results.php')
-    res_games.raise_for_status()
-    soup = bs4.BeautifulSoup(res_games.text, 'html.parser')
-
-    soup_date = soup.select('body > div > div > div > div > b')
-    soup_games = soup.select('body > div > div > div > div > table')
-
-    matches_dictionary = {}
-
-    date_list_input = str(soup_date).split(',')
-    game_list_input = str(soup_games).split(',')
-
-    date_list = clean_dates(date_list_input)
-    game_list = clean_games(game_list_input)
-
-    for i in range(0, len(date_list) - 1):
-        if date_string in date_list[i]:
-            matches_dictionary[date_list[i]] = game_list[i]
-
-    return matches_dictionary
+class FixturesParser:
+    def __init__(self, date: str):
+        self.__forthcoming_url = 'https://www.nwcfl.com/noformat-fixtures.php'
+        self.__past_url = 'https://www.nwcfl.com/noformat-results.php'
+        self.__date = date
+        self.__games_dictionary = {}
+        self.__daily_team_list = []
+        self.__postponed_list = []
+        self.__teams_playing_list = []
+        self.execute()
 
 
-def clean_dates(date_list:list):
-    return_list = []
-    date_removal_strings = [']', '[', '\t', '<br/>', '<br>', '</b>', '<b>', '\n', '  ']
-    for date in date_list:
-        s = date
-        s = s.replace('\n', ' - ')
-        for item in date_removal_strings:
-            s = s.replace(item, '')
-        s = s.strip()
-        return_list.append(s)
-    return return_list
+    def execute(self):
+        self.__games_dictionary = self.create_forward_facing_dict()
+        past_games_dict = self.create_backward_looking_dict()
+        self.__games_dictionary.update(past_games_dict)
+        self.remove_score_from_results(self.__games_dictionary)
+        self.__postponed_list = self.create_postponed_list()
+        self.__teams_playing_list = self.create_playing_list(self.__postponed_list)
 
 
-def clean_games(game_list:list):
-    return_list = []
-    games_removal_strings = ['[', '<tr>', '<td>', '</td>', '</b>', '<b>', '<table>', '</table>', '<td width=\"45%\">','<td width=\"10%\">']
-    for date in game_list:
-        s = date
-        for item in games_removal_strings:
-            s = s.replace(item, '')
-        s = s.replace('</tr>', '\n')
-        s = s.replace('amp;', '')
-        s = s.replace('-', ' - ')
-        s = s.replace(' v ', ' - ')
-        s = s.strip()
-        s = s.split('\n')
+    def get_teams_playing_list(self):
+        return self.__teams_playing_list
 
-        s = remove_score_from_results(s)
-        return_list.append(s)
-    return return_list
+    def get_postponed_list(self):
+        return self.__postponed_list
 
+    def get_game_dictionary(self):
+        return self.__games_dictionary
 
-def remove_score_from_results(games:list):
-    return_list = []
-    regex = re.compile(r'''
-                \d{1,2}
-                -
-                \d{1,2}
-                ''', re.VERBOSE)
-    for game in games:
-        return_list.append(re.sub(regex, ' - ', game))
-    return return_list
+    def create_twitter_dictionary(self):
+        twitter_dict = {}
+        team_file = open('T:\\Coding\\Projects\\Python\\NWCFL\\teamsDictionary.txt')
+        teams = team_file.read()
+        team_file.close()
+        team_list = teams.split('\n')
+        for team in team_list:
+            team_items = team.split('-')
+            if team_items[1] in self.__teams_playing_list:
+                twitter_dict[team_items[1]] = team_items[0]
+        return twitter_dict
 
 
-def playing_today(game_day_dict: dict) ->list:
-    team_names_playing_today = []
-    for key, values in game_day_dict.items():
-        for value in values:
-            if 'P-P' in value:
-                continue
-            if '-' in value:
-                teams = value.strip().split('-')
-            else:
-                teams = value.split(' v ')
-            if teams[0] not in team_names_playing_today:
-                team_names_playing_today.append(teams[0].strip())
-            if teams[1] not in team_names_playing_today:
-                team_names_playing_today.append(teams[1].strip())
-    return team_names_playing_today
+    def create_playing_list(self, postponed_list: list):
+        playing = []
+        for key, value in self.__games_dictionary.items():
+            for match in value:
+                teams = match.split(' - ')
+                playing.append(teams[0])
+                playing.append(teams[1])
+        for game in postponed_list:
+            teams = game.split(' - ')
+            playing.remove(teams[0])
+            playing.remove(teams[1])
+        return playing
+
+    def create_postponed_list(self):
+        postponed = []
+        for key, value in self.__games_dictionary.items():
+            new_value = []
+            for match in value:
+                new_match = match.replace('P - P', ' - ')
+                if 'P - P' in match:
+                    postponed.append(new_match)
+                    new_value.append(new_match)
+                else:
+                    new_value.append(new_match)
+            self.__games_dictionary[key] = new_value
+        return postponed
 
 
-def daily_twitter_dictionary(teams_playing_today: list) ->dict:
-    team_file = open('T:\\Coding\\Projects\\Python\\NWCFL\\teamsDictionary.txt')
-    teams = team_file.read()
-    team_file.close()
+    def create_forward_facing_dict(self):
+        soup = self.create_soup(self.__forthcoming_url)
+        soup_dates = soup.select('body > div > div > div > div > b')
+        soup_games = soup.select('body > div > div > div > div > table')
+        unformatted_dates_list = str(soup_dates).split(',')
+        unformatted_games_list = str(soup_games).split(',')
+        formatted_dates_list = self.clean_dates(unformatted_dates_list)
+        formatted_games_list = self.clean_games(unformatted_games_list)
+        return self.create_game_day_dictionary(formatted_dates_list, formatted_games_list)
 
-    team_list = teams.split('\n')
-    team_dictionary = {}
-    for team in team_list:
-        team_items = team.split('-')
-        if team_items[1] in teams_playing_today:
-            team_dictionary[team_items[1]] = team_items[0]
-    return team_dictionary
+    def create_backward_looking_dict(self):
+        soup = self.create_soup(self.__past_url)
+        soup_dates = soup.select('body > div > div > div > div > b')
+        soup_games = soup.select('body > div > div > div > div > table')
+        unformatted_dates_list = str(soup_dates).split(',')
+        unformatted_games_list = str(soup_games).split(',')
+        formatted_dates_list = self.clean_dates(unformatted_dates_list)
+        formatted_games_list = self.clean_games(unformatted_games_list)
+        return self.create_game_day_dictionary(formatted_dates_list, formatted_games_list)
+
+    def create_game_day_dictionary(self, date_list: list, game_list: list):
+        game_day_dict = {}
+        for i in range(0, len(date_list) - 1):
+            if self.__date in date_list[i] and 'Division' in date_list[i]:
+                game_day_dict[date_list[i]] = game_list[i]
+        return game_day_dict
+
+    def clean_dates(self, date_list: list):
+        return_list = []
+        removal_strings = [']', '[', '\t', '<br/>', '<br>', '</b>', '<b>', '\n', '  ']
+        for date in date_list:  # I want to write a function that does all this cleaning
+            s = date
+            s = s.replace('\n', ' - ')
+            for item in removal_strings:
+                s = s.replace(item, '')
+            s = s.strip()
+            return_list.append(s)
+        return return_list
+
+    def clean_games(self, game_list: list):
+        return_list = []
+        removal_strings = ['[', '<tr>', '<td>', '</td>', '</b>', '<b>', '<table>', '</table>',
+                                 '<td width=\"45%\">', '<td width=\"10%\">']
+        for date in game_list:
+            s = date
+            for item in removal_strings:  # I want to write a function that does all this cleaning
+                s = s.replace(item, '')
+            s = s.replace('</tr>', '\n')
+            s = s.replace('amp;', '')
+            s = s.replace('-', ' - ')
+            s = s.replace(' v ', ' - ')
+            s = s.strip()
+            s = s.split('\n')
+
+            return_list.append(s)
+        return return_list
+
+    def remove_score_from_results(self, games: dict):
+        regex = re.compile(r'''
+                    \d{1,2}
+                    \s-\s
+                    \d{1,2}
+                    ''', re.VERBOSE)
+        for key, batch in games.items():
+            new_batch = []
+            for s in batch:
+                new_s = re.sub(regex, ' - ', s)
+                new_batch.append(new_s)
+            games[key] = new_batch
 
 
-def dictionary_processor(gameday:dict):
-    daily_fixtures_list = []
-    for k, v in gameday.items():
-        for match in v:
-            teams = match.split(' - ')
-            daily_fixtures_list.append([k, teams[0].strip(), teams[1].strip(), ['0-0']])
-    return daily_fixtures_list
-
-def formatted_list(gameday: dict):
-    formatted_return_list = []
-    for k, v in gameday.items():
-        for match in v:
-            teams = match.strip().split('-')
-            formatted_return_list.append([teams[0].strip(), '0-0', teams[1].strip()])
-    return formatted_return_list
-
-
+    def create_soup(self, url: str):
+        res_games = requests.get(url)
+        res_games.raise_for_status()  # will kill the programme if the URL is 404
+        soup = bs4.BeautifulSoup(res_games.text, 'html.parser')
+        return soup
 
 
 

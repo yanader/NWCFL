@@ -5,6 +5,6 @@ views = Blueprint(__name__, "views")
 
 @views.route("/table")
 def results():
-    from main import output_format
+    from Archive.main import output_format
     headings = ('Home', 'Score', 'Away')
     return render_template("table.html", headings=headings, data=output_format)

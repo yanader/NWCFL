@@ -8,3 +8,6 @@ class Match:
     def add_score(self, score: str):
         parts = score.split('-')
         self.__reported_scores.append((parts[0], parts[1]))
+
+    def report_score(self):
+        return

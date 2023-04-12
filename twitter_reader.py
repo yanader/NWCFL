@@ -13,20 +13,19 @@ def tweet_reader(daily_dictionary: dict, reported_scores: list) -> None:
     score_regex = re.compile(r'''
             #[^:\n]
             \d{1,2}
+            \s?
             -
+            \s?
             \d{1,2}
             #[^:!.]
             ''', re.VERBOSE)
 
     for team_name, twitter_handle in daily_dictionary.items():
-        #i've tried this next line as a way of just reading the top result. i need to test this while there are matches on
-        # this may have sorted out the speed issue though.
-        for tweet in sntwitter.TwitterSearchScraper('from:' + twitter_handle,
-                                                                 mode=sntwitter.TwitterSearchScraperMode.TOP).get_items():
-        #for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+twitter_handle, mode=sntwitter.TwitterSearchScraperMode.TOP).get_items()):
-        ##for i, tweet in enumerate(sntwitter.TwitterSearchScraper('from:'+twitter_handle).get_items()):
-            # if tweet.date.date() != datetime.date.today():
-            #     break
+
+        for tweet in sntwitter.TwitterSearchScraper('from:' + twitter_handle).get_items():
+            ## do i even need to loop over this if it's one tweet? just check the date and move on?
+            if tweet.date.date() != datetime.date.today():
+                break
 
             text = tweet.rawContent
             extract = score_regex.findall(text)
