@@ -1,53 +1,17 @@
-Add code to make this run continually. - Potentially just with a 'while True' block but look at the discord bot code
-let the tweet reader add the scores it finds into the 'fixture_list'
-    the idea is that this will collect all the reported scores for each fixture
-    and those can be processed to see which is the most appropriate to publish
-add in functionality to reformat a list in the format [[Home, score, away],[Home, score, away]] which
-    will be used in the flask functionality
-add in the flask functionality to push the above to index.html
-find somewhere to host this so that it can be live
+Tweet Reader:
+    Runs in while True (possible multithreading?
+    Adapt tweet reader so that it checks a new read against a list of IDs that have read so far
+    distribute the tweets into the relevant match objects
 
-tweet_reader() is now, theoretically, adding any score update to the appropriate list of scores (for the right game) in 'fixture_list'
-this means that i can access that in main and/or pass it along to a new function that will calculate which is the most accurate score
-AKA the one that should be added into the 'formatted_list' (then views can reference formatted list that will only contain 1 score.
+class Match
+    process list of reported scores to output the most appropriate
 
+output variable
+    create appropriate variable that will feed into html
 
-others?
-do i need to look at how to constantly monitor tweet accounts? twitterReader probably needs a refactor so that it's
-not building the list/dictionary in the same function that reads tweets
+html
+    edit html to allow for differentiation between prem/1stN/1stS
 
-probably want to use regex to clean up the inputs from the fixtures and reuslts pages
-
-
-look at the following code as a way of running perpetually:
-
-
-
-import snscrape.modules.twitter as sntwitter
-import time
-
-# Set the keyword to search for
-keyword = "python"
-
-# Keep track of the tweets we've seen so far
-seen_tweets = set()
-
-while True:
-    # Perform a Twitter search for the keyword
-    tweets = sntwitter.TwitterSearchScraper(f"{keyword} since:7 days ago").get_items()
-
-    # Find any new tweets and print them to the console
-    new_tweets = []
-    for tweet in tweets:
-        if tweet.id not in seen_tweets:
-            new_tweets.append(tweet)
-            seen_tweets.add(tweet.id)
-
-    # Print any new tweets to the console
-    if new_tweets:
-        print("New tweets found:")
-        for tweet in new_tweets:
-            print(tweet.content)
-
-    # Wait for a few seconds before checking again
-    time.sleep(5)
+web interface django/Flask
+    decide which will be used and implement it (archive the other)
+    run on multithread??

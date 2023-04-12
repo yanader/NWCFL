@@ -11,3 +11,6 @@ class Match:
 
     def report_score(self):
         return
+
+    def __str__(self):
+        return f'{self.__competition}: {self.__home_team} vs {self.__away_team}.'
